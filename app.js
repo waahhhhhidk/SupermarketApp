@@ -305,7 +305,7 @@ app.get('/deleteProduct/:id', (req, res) => {
         if (error) {
             // Handle any error that occurs during the database operation
             console.error("error deleting product:", error);
-            res.status(500).send('Error deleting product');
+            res.status(500).send('error deleting product');
         } else {
             // Send a success response
             res.redirect('/inventory');
